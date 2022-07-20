@@ -1,0 +1,42 @@
+﻿body {
+    padding-top: 160px;
+}
+
+footer {
+    border-top: 1px solid #000000;
+}
+
+#aboutHeader {
+    border: 1px solid #000000;
+    margin-bottom: 25px;
+    padding: 10px 0 10px 0;
+    text-align: center;
+}
+
+#formBody {
+    border-left: 1px solid #000000;
+}
+
+.column {
+    flex: 33.33%;
+    padding: 6px;
+}
+
+.valError {
+    color: crimson;
+}
+
+.logo {
+    background-color: #ffffff;
+    height: 120px;
+    width: 120px;
+}
+
+.row {
+    display: flex;
+}
+
+.pageHeaders {
+    text-align: center;
+}
+

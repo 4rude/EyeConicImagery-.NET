@@ -1,0 +1,60 @@
+﻿@{
+    ViewBag.Title = "Contact us with your...";
+}
+<h2>@ViewBag.Title.</h2>
+<h3>@ViewBag.Message</h3>
+
+<br />
+
+@*Debug jQuery validation*@
+<div class="col-md-12" id="formBody">
+    <form id="validate-this-form">
+        <div class="form-group col-md-12">
+            <label for="firstName">First Name:</label>
+            <input type="text" class="form-control" id="firstName" name="firstName" />
+        </div> 
+        <div class="form-group col-md-12">
+            <label for="lastName">Last Name:</label>
+            <input type="text" class="form-control" id="lastName" name="lastName" />
+        </div>
+        <div class="form-group col-md-12">
+            <label for="date">Date:</label>
+            <input type="date" class="form-control" id="date" name="date" data-val-required="This field is required..."  />
+        </div>
+        <div class="form-group col-md-12">
+            <label for="email">Email Address:</label>
+            <input type="email" class="form-control" id="email" name="email" data-val-required="This field is required..." />
+        </div>
+        <div class="form-group col-md-12">
+            <label for="confirmation">Re-type Email Address:</label>
+            <input type="email" class="form-control" id="confirmation" name="confirmation" data-val-required="This field is required..."  />
+        </div>
+        <div class="form-group col-md-12">
+            <label for="subject">Subject:</label>
+            <input type="text" class="form-control" id="subject" name="subject" data-val-required="This field is required..."  />
+        </div>
+        <div class="form-group col-md-12">
+            <label for="message">Message:</label>
+            <textarea class="form-control" rows="4" id="message" name="message"></textarea>
+        </div>
+        <div class="form-group col-md-12"><button type="submit" class="btn btn-primary">Submit</button></div>
+    </form>
+</div>
+
+<br />
+
+<address>
+    1234 One Eye Blvd<br />
+    Madison, WI 53558<br />
+    <abbr title="Phone">P:</abbr>
+    555.555.0800
+</address>
+
+<address>
+    <strong>EyeConic Owner:</strong>   <a href="mailto:Support@example.com">owner@eyeconicimagery.com</a><br />
+    <strong>Marketing Department:</strong> <a href="mailto:Marketing@example.com">Marketing@eyeconicimagery.com</a>
+</address>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

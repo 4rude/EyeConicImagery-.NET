@@ -1,0 +1,64 @@
+﻿
+@{
+    ViewBag.Title = "OrderSubmit";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>@ViewBag.Message</h1>
+
+<br />
+
+@*Debug jQuery validation*@
+<div class="col-md-12" id="formBody">
+    <form id="validate-this-form">
+        <div class="form-group col-md-12">
+            <label for="firstName">First and Last Name:</label>
+            <input type="text" class="form-control" id="firstName" />
+        </div>
+        <div class="form-group col-md-12">
+            <label for="businessName">Business/Organization Name:</label>
+            <input type="text" class="form-control" id="businessName" />
+        </div>
+        <div class="form-group col-md-12">
+            <label for="firstName">First and Last Name:</label>
+            <input type="text" class="form-control" id="firstName" />
+        </div>
+        <div class="form-group col-md-12">
+            <label for="phoneNumber">Phone Number:</label>
+            <input type="tel" class="form-control" id="phoneNumber" data-val-required="This field is required..." />
+        </div>
+        <div class="form-group col-md-12">
+            <label for="email">Email Address:</label>
+            <input type="email" class="form-control" id="email" data-val-required="This field is required..." />
+        </div>
+        <div class="form-group col-md-12">
+            <label for="contactTime">Best time to contact you:</label>
+            <input type="time" class="form-control" id="contactTime" />
+        </div>
+        <div class="form-group col-md-12">
+            <label for="numberOfShirts">How many shirts are you looking to order:</label>
+            <input type="number" class="form-control" id="numberOfShirts" />
+        </div>
+        <div class="form-group col-md-12">
+            <label for="sides">Which side(s) of the shirt do you want printed:</label><br />
+            <input type="radio" name="sides" value="front" /> Front<br />
+            <input type="radio" name="sides" value="back"/> Back<br />
+            <input type="radio" name="sides" value="frontandback"/> Front and Back<br />
+        </div>
+        <div class="form-group col-md-12">
+            <label for="numberOfColors">How many colors do you want per shirt:</label>
+            <input type="number" class="form-control" id="numberOfColors" />
+        </div>
+        <div class="form-group col-md-12">
+            <label for="material">What material do you want your shirts made of:</label><br />
+            <input type="radio" name="material" value="cotton" /> Cotton<br />
+            <input type="radio" name="material" value="bamboo" /> Bamboo<br />
+        </div>
+        <div class="form-group col-md-12">
+            <label for="message">Drop us a personal message:</label>
+            <textarea class="form-control" rows="4" id="message"></textarea>
+        </div>
+        <div class="form-group col-md-12"><button type="submit" class="btn btn-primary">Submit</button></div>
+    </form>
+</div>
+
